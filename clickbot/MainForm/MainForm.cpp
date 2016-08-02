@@ -35,7 +35,7 @@ void MainForm::onEndPaint(const core::eventInfo& e) {
 	core::Core2D::fillRect(core::Rect(41, 50, 159, 70), backColor, *this);
 	font.print(text, this->img, 100 - font.width(text) / 2, 55);
 
-	core::Core2D::fillRect(core::Rect(10, 80, 130, 100), backColor, *this);
+	core::Core2D::fillRect(core::Rect(10, 80, 190, 100), backColor, *this);
 	core::Font::get().print("Hotkey: Pause/Break", this->img, 20, 85);
 
 	core::Core2D::drawRect(getClientRect(), bot.running()? core::vec4b(140, 0, 180, 0): (active ? core::vec4b(0, 122, 204, 255) : core::vec4b(84, 84, 84, 255)), *this);
